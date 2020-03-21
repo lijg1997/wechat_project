@@ -1,0 +1,8 @@
+<view class="indexContainer">
+  <button wx:if="{{!userInfo.nickName}}" type="primary" open-type="getUserInfo"                 bindgetuserinfo="handleGetUserInfo" class="btn">获取用户信息</button>
+  <block wx:else>
+    <image bindtap="toLogin" class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text class="userName">{{userInfo.nickName}}</text>
+  </block>
+  <text class="hello">{{msg}}</text>
+</view>

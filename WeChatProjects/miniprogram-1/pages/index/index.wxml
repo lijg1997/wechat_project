@@ -1,0 +1,6 @@
+<view class="indexContainer">
+  <button size="small">获取用户信息</button>
+  <block>
+    <image src=""></image>
+  </block>
+</view>
